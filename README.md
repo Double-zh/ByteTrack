@@ -87,6 +87,9 @@ python3 train.py -f exps/example/custom/yolox_voc_s_ZZH.py -d 1 -b 1 --fp16 -o -
 
 ### 1. 调用摄像头进行实时检测跟踪，并保存结果
 
+```shell
+cd <ByteTrack_HOME>
+
 python3 ZZH_track.py webcam -f exps/example/custom/yolox_voc_s_ZZH.py -c YOLOX_outputs/yolox_voc_s_ZZH/latest_ckpt.pth.tar --fp16 --fuse --save_result
 
 ### 2. 对视频进行检测跟踪，并保存结果
@@ -96,6 +99,7 @@ python3 ZZH_track.py webcam -f exps/example/custom/yolox_voc_s_ZZH.py -c YOLOX_o
 
 ```shell
 cd <ByteTrack_HOME>
+
 python3 ZZH_track.py video -f exps/example/custom/yolox_voc_s_ZZH.py -c YOLOX_outputs/yolox_voc_s_ZZH/latest_ckpt.pth.tar --fp16 --fuse --save_result
 
 ## 六、Deploy
