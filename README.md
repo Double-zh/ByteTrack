@@ -71,6 +71,7 @@ class Exp(MyExp):
         self.depth = 0.33
         self.width = 0.50
         self.warmup_epochs = 1
+```
 
 
 ## 四、Training
@@ -101,6 +102,8 @@ python3 ZZH_track.py webcam -f exps/example/custom/yolox_voc_s_ZZH.py -c YOLOX_o
 cd <ByteTrack_HOME>
 
 python3 ZZH_track.py video -f exps/example/custom/yolox_voc_s_ZZH.py -c YOLOX_outputs/yolox_voc_s_ZZH/latest_ckpt.pth.tar --fp16 --fuse --save_result
+```
+
 
 ## 六、Deploy
 
